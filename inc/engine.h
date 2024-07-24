@@ -8,11 +8,15 @@
 #define ELSIZE elements.size()
 #define INSIZE inputs.size()
 
+class ElemController;
+class Engine;
+
 struct point{
     uint16_t x, y;
 };
 
 class ElemController{
+    friend class Engine;
 private:
     Element *element;
     bool exec = false;

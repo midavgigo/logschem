@@ -67,3 +67,7 @@ vec<ElemController> Engine::get_elems(){
     }
     return ret;
 }
+
+uint8_t Engine::set_output(ElemController elem){
+    return output.add_input(elem.element);
+}
